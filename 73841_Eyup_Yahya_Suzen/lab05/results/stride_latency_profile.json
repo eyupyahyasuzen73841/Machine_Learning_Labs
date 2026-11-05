@@ -1,0 +1,33 @@
+{
+  "student": "Ey\u00fcp Yahya S\u00fczen (73841)",
+  "eager_latency_us": 43.571599991992116,
+  "traced_latency_us": 33.235899987630546,
+  "traced_speedup": 1.3109799947709622,
+  "contiguous_meta": {
+    "shape": [
+      2048,
+      2048
+    ],
+    "stride": [
+      2048,
+      1
+    ],
+    "is_contiguous": true
+  },
+  "non_contiguous_meta": {
+    "shape": [
+      2048,
+      2048
+    ],
+    "stride": [
+      1,
+      2048
+    ],
+    "is_contiguous": false
+  },
+  "contig_sum_ms": 0.19471649953629822,
+  "non_contig_sum_ms": 0.33019900030922145,
+  "stride_penalty_factor": 1.695793633798697,
+  "contiguous_allocation_cost_ms": 8.702105500269681,
+  "ir_snippet": "graph(%self.1 : __torch__.MoonsEvaluationModel,\n      %x : Float(64, 2, strides=[2, 1], requires_grad=0, device=cpu)):\n  %sigmoid : __torch__.torch.nn.modules.activation.Sigmoid = prim::GetAttr[name=\"sigmoid\"](%self.1)\n  %fc2 : __torch__.torch.nn.modules.linear.___torch_mangle_0.Linear = prim::GetAttr[name=\"fc2\"](%self.1)\n  %act : __torch__.torch.nn.modules.activation.ReLU = prim::GetAttr[name=\"act\"](%self.1)\n  %fc1 : __torch__.torch.nn.modules.linear.Linear = prim::GetAttr[name=\"fc1\"](%self.1)\n  %bias.1 : Tensor = prim::GetAttr[name=\"bias\"](%fc1)\n  %weight.1 : Tensor = prim::GetAttr[name=\"wei"
+}

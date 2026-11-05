@@ -1,0 +1,26 @@
+{
+    "MLP": {
+        "parameters": 235146,
+        "thop_macs": 234752,
+        "thop_flops": 469504,
+        "median_latency_b1_ms": 0.06290001329034567,
+        "median_latency_b128_ms": 0.5729000549763441,
+        "test_accuracy": 87.99
+    },
+    "CNN": {
+        "parameters": 20490,
+        "thop_macs": 1031744,
+        "thop_flops": 2063488,
+        "median_latency_b1_ms": 0.35835010930895805,
+        "median_latency_b128_ms": 5.296000046655536,
+        "test_accuracy": 89.88
+    },
+    "Attention": {
+        "parameters": 70794,
+        "thop_macs": 591488,
+        "thop_flops": 1182976,
+        "median_latency_b1_ms": 0.5028499290347099,
+        "median_latency_b128_ms": 2.6535000652074814,
+        "test_accuracy": 83.7
+    }
+}
