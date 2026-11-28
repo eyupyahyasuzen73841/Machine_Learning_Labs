@@ -1,0 +1,34 @@
+Representative operator summary (first 20 batches)
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                                   Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg    # of Calls  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                             aten::convolution_backward        32.28%     134.470ms        35.56%     148.114ms       3.703ms            40  
+                                          Backward Pass        14.61%      60.839ms        56.27%     234.363ms      11.718ms            20  
+enumerate(DataLoader)#_SingleProcessDataLoaderIter._...        11.20%      46.639ms        19.25%      80.199ms       4.010ms            20  
+                      aten::_nnpack_spatial_convolution        10.86%      45.226ms        11.53%      48.027ms       1.201ms            40  
+                               Optimizer.step#Adam.step         3.91%      16.289ms         6.05%      25.215ms       1.261ms            20  
+                                            aten::fill_         2.02%       8.402ms         2.02%       8.402ms       0.743us         11308  
+                                       aten::avg_pool2d         1.83%       7.641ms         1.83%       7.641ms     191.036us            40  
+                                              aten::sum         1.71%       7.125ms         2.07%       8.605ms       3.309us          2600  
+                              aten::avg_pool2d_backward         1.42%       5.933ms         2.13%       8.868ms     221.708us            40  
+                                            aten::addmm         1.26%       5.256ms         1.29%       5.373ms     134.329us            40  
+                               aten::threshold_backward         1.12%       4.680ms         1.12%       4.680ms      78.006us            60  
+                                           aten::select         1.01%       4.210ms         1.45%       6.021ms       0.672us          8960  
+                                           Forward Pass         0.90%       3.736ms        18.20%      75.787ms       3.789ms            20  
+                                              aten::div         0.72%       2.996ms         1.25%       5.208ms       3.617us          1440  
+                                               aten::eq         0.68%       2.820ms         1.11%       4.631ms       3.618us          1280  
+                                       aten::as_strided         0.67%       2.800ms         0.67%       2.800ms       0.214us         13060  
+                                    aten::empty_strided         0.67%       2.780ms         0.88%       3.683ms       0.635us          5796  
+                                            aten::copy_         0.66%       2.764ms         0.66%       2.764ms       0.390us          7080  
+                                              aten::any         0.59%       2.460ms         0.80%       3.333ms       2.604us          1280  
+                                             aten::add_         0.55%       2.308ms         0.67%       2.787ms       0.968us          2880  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  
+Self CPU time total: 416.516ms
+
+
+Full epoch stage breakdown:
+         Stage  Time_seconds  Percentage
+  Data Loading      2.856180   20.032251
+  Forward Pass      2.859740   20.057218
+ Backward Pass      8.017866   56.234514
+Optimizer Step      0.524123    3.676017

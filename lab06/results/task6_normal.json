@@ -1,0 +1,14 @@
+{
+    "method": "normal",
+    "batch_size": 256,
+    "accumulation_steps": 1,
+    "effective_batch_size": 256,
+    "epochs": 5,
+    "optimizer_steps": 1175,
+    "training_time_seconds": 58.69352624984458,
+    "throughput_samples_per_second": 5111.296239434829,
+    "peak_memory_mb": 673.046875,
+    "final_train_accuracy": 0.8885166666666666,
+    "final_test_accuracy": 0.8863,
+    "final_test_loss": 0.32672582795619964
+}

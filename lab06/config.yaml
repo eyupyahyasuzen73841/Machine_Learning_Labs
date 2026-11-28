@@ -1,0 +1,36 @@
+project:
+  name: "ML_Lab6"
+  student_name: "Eyup Yahya Suzen"
+  student_id: 73841
+  seed: 42
+
+data:
+  dataset: "FashionMNIST"
+  root: "./data"
+  batch_size: 64
+  num_workers: 0
+
+model:
+  name: "EyupLeNetVariant"
+  num_classes: 10
+
+training:
+  epochs: 10
+  learning_rate: 0.001
+  optimizer: "Adam"
+  device: "cpu"
+  accumulation_steps: 1
+
+scheduler:
+  name: "StepLR"
+  step_size: 3
+  gamma: 0.5
+
+checkpoint:
+  enabled: true
+  directory: "./checkpoints"
+  save_every: 1
+
+mlflow:
+  experiment_name: "Lab6_73841"
+  tracking_uri: "sqlite:///mlflow.db"

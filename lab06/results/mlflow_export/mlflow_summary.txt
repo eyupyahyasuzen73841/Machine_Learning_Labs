@@ -1,0 +1,9 @@
+MLflow Experiment Export
+========================
+Experiment: Lab6_73841
+Experiment ID: 1
+Total runs: 28
+Parameter records: 192
+Metric records: 191
+Metric history records: 846
+Artifact records: 40

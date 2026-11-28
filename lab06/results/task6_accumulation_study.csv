@@ -1,0 +1,3 @@
+method,batch_size,accumulation_steps,effective_batch_size,epochs,optimizer_steps,training_time_seconds,throughput_samples_per_second,peak_memory_mb,final_train_accuracy,final_test_accuracy,final_test_loss
+normal,256,1,256,5,1175,58.69352624984458,5111.296239434829,673.046875,0.8885166666666666,0.8863,0.32672582795619964
+accumulation,64,4,256,5,1175,64.53238408174366,4648.828712418059,640.15625,0.8878833333333334,0.8848,0.32776840221881864

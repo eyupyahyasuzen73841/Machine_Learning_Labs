@@ -1,0 +1,29 @@
+# Virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Dataset
+data/
+
+# Model checkpoints
+checkpoints/
+
+# MLflow local storage
+mlruns/
+mlartifacts/
+mlflow.db
+mlflow.db-*
+
+# System files
+.DS_Store
+
+# IDE settings
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/

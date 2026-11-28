@@ -1,0 +1,14 @@
+{
+    "method": "accumulation",
+    "batch_size": 64,
+    "accumulation_steps": 4,
+    "effective_batch_size": 256,
+    "epochs": 5,
+    "optimizer_steps": 1175,
+    "training_time_seconds": 64.53238408174366,
+    "throughput_samples_per_second": 4648.828712418059,
+    "peak_memory_mb": 640.15625,
+    "final_train_accuracy": 0.8878833333333334,
+    "final_test_accuracy": 0.8848,
+    "final_test_loss": 0.32776840221881864
+}

@@ -1,0 +1,10 @@
+{
+    "batch_size": 32,
+    "epochs": 5,
+    "training_time_seconds": 71.21207687421702,
+    "throughput_samples_per_second": 4212.768580389737,
+    "peak_memory_mb": 595.5,
+    "final_train_accuracy": 0.9200666666666667,
+    "final_test_accuracy": 0.9125,
+    "final_test_loss": 0.24402019993662835
+}
